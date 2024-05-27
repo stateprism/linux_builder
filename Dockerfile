@@ -2,6 +2,8 @@ FROM ubuntu:noble
 LABEL maintainer="Matheus Xavier <soft.song[at]fastmail[the most common tld]>"
 LABEL description="Docker image for building the Linux kernel"
 LABEL version="1.0"
+LABEL source="https://github.com/stateprism/linux_builder"
+LABEL license="GPL-3"
 
 RUN mkdir /scripts /build
 RUN apt-get update && apt-get upgrade -yy
